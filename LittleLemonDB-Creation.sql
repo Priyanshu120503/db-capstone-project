@@ -30,8 +30,8 @@ ENGINE = InnoDB;
 -- Table `LittleLemonDB`.`Bookings`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `LittleLemonDB`.`Bookings` (
-  `BookingID` INT NOT NULL,
-  `BookingSlot` DATETIME NOT NULL,
+  `BookingID` INT NOT NULL AUTO_INCREMENT,
+  `BookingDate` DATE NOT NULL,
   `TableNo` INT NULL,
   `CustomerID` INT NOT NULL,
   PRIMARY KEY (`BookingID`),
